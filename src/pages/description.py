@@ -12,10 +12,10 @@ from config import colors_config, card_config
 
 dash.register_page(__name__)
 
-background_img = 'linear-gradient(to left, rgba(0,0,0,1), rgba(59,11,63,0.9))'
-card_title_img = 'linear-gradient(to right, rgba(0,0,0,1), rgba(255,87,51,0.9))'
-card_bg_img = 'linear-gradient(to right, rgba(0,0,0,1), rgba(59,11,63,0.9))'
-card_bg_img2 = 'linear-gradient(to right, rgba(0,0,0,1), rgba(59,11,63,1))'
+background_img = 'linear-gradient(to left, rgba(0,0,0,1), rgba(82,18,31,1))'
+card_title_img = 'linear-gradient(to left, rgba(81,18,31,0.75), rgba(0,0,0,1))'
+card_bg_img = 'linear-gradient(to right, rgba(0,0,0,1), rgba(82,18,31,0.9))'
+card_bg_img2 = 'linear-gradient(to right, rgba(0,0,0,1), rgba(82,18,31,1))'
 
 # Define a function to create a titled card
 def create_titled_card(title, content, color_title, color_card):
@@ -41,7 +41,7 @@ layout =  html.Div(style={'background-image': background_img,
         dbc.Row([
             dbc.Col([
                  create_titled_card('Description',
-                                    html.P("The algorithm presented herein represents a sophisticated, data-driven investment fund leveraging advanced AI and Machine Learning algorithms. This fund operates within the realm of US Index Futures, predicting the expansion of the daily range. The algorithm strategically engages both long and short positions to capitalise on market opportunities. ", 
+                                    html.P("The algorithm presented herein represents a sophisticated, data-driven investment fund leveraging advanced AI and Machine Learning algorithms. This fund operates within the realm of Crypto Currencies, predicting the expansion of the daily range. The algorithm strategically engages both long and short positions to capitalise on market opportunities. Trade execution is fully automated to avoid human error and emotion. ", 
                                                     className='card-text', 
                                                     style={'color':'#95D7E0'},
                                                     ),
@@ -49,7 +49,7 @@ layout =  html.Div(style={'background-image': background_img,
                 
                 html.Br(),
                 create_titled_card('Objective',
-                                   html.P("The primary objective of the fund is to achieve compelling and sustainable returns by employing our pattern-detecting algorithm during the 23 hour a day tradingday. Striving for both attractiveness and sustainability involves striking a balance between maximising returns and minimising risk, achieved through identification of active and inactive periods and sophisticated risk management.",
+                                   html.P("The primary objective of the fund is to achieve compelling and sustainable returns by employing our pattern-detecting algorithm during the 24 hour a day tradingday. Striving for both attractiveness and sustainability involves striking a balance between maximising returns and minimising risk, achieved through identification of active and inactive periods and sophisticated risk management.",
                                           className='card-text',
                                           style={'color':'#95D7E0'},
                                           ),
